@@ -269,6 +269,25 @@
     footer a:hover{color:rgba(255,255,255,.95)}
     .copy{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.10);text-align:center;color:rgba(255,255,255,.55);font-size:13px}
 
+    /* BOTÃO FLOTTANTE INÍCIO (novo) */
+    .home{
+      position:fixed;left:18px;bottom:18px;z-index:1200;
+      border-radius:999px;
+      padding:14px 16px;
+      font-weight:1000;
+      background:rgba(0,0,0,.40);
+      color:rgba(255,255,255,.92);
+      border:1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(10px);
+      box-shadow:0 18px 40px rgba(0,0,0,.35);
+      transition:transform .18s ease,filter .18s ease,border-color .18s ease;
+    }
+    .home:hover{
+      filter:brightness(1.03);
+      transform:translateY(-1px);
+      border-color:rgba(200,169,90,.35);
+    }
+
     .wa{
       position:fixed;right:18px;bottom:18px;z-index:1200;
       border-radius:999px;background:#25D366;color:#0b0b0b;
@@ -461,6 +480,9 @@
     <div class="copy">© 2025 Reserve Belo Horizonte. Todos os direitos reservados.</div>
   </div>
 </footer>
+
+<!-- BOTÃO FLOTTANTE INÍCIO (novo) -->
+<a class="home" href="https://edsonsnp2013-crypto.github.io/pagina_inicial/" aria-label="Voltar para a página inicial">Início</a>
 
 <a id="btnWhatsFloat" class="wa" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 
